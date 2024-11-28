@@ -1,0 +1,260 @@
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #04c625;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logotipo-header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    background: transparent;
+}
+
+/* Botões no header */
+header .login-btn,
+header .register-btn{
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: large;
+    top: 10px;
+    right: 10px;
+    padding: 10px 10px;
+    background-color: #04c625;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .login-btn {
+    margin-right: 100px; /* Espaçamento para o botão Login */
+}
+
+header .register-btn {
+    margin-right: 20px; /* Espaçamento para o botão Registo */
+}
+header .logout-btn {
+    position: absolute;
+    margin-right: 20px; /* Espaçamento para o botão Registo */
+    width: 100px;
+    height: 40px;
+    top: 20px;
+    right: 10px;
+    padding: 10px 10px;
+    background-color: #04c625;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+
+}
+
+/* Navegação */
+nav {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #04c625;
+    font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1200px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: xx-large;
+    color: #04c625;
+    margin: 50px 0 20px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.feature-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.feature-item a {
+    color: #76b900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.feature-item a:hover {
+    text-decoration: underline;
+}
+
+.icon img {
+    width: 30px;
+    margin-bottom: 30px;
+}
+
+/* Banner */
+.full-screen-image {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.full-screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sobre (Seção About) */
+#about img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Estilizando o cabeçalho */
+.header {
+    position: relative; /* Necessário para alinhar elementos filhos absolutos */
+    width: 100%;
+    height: 60px; /* Altura do cabeçalho */
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Posicionando o menu de usuário */
+.user-menu {
+    position: absolute;
+    top: 10px; /* Distância do topo do cabeçalho */
+    right: 20px; /* Distância da borda direita */
+    display: inline-block;
+}
+
+/* Botão de perfil */
+.profile-button {
+    background-color: #2be54a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.profile-button:hover {
+    background-color: #428800; /* Cor ao passar o mouse */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none; /* Oculto por padrão */
+    position: absolute;
+    top: 100%; /* Abaixo do botão */
+    right: 0; /* Alinhado à direita */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li {
+    padding: 10px;
+}
+
+.dropdown ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Mostrar dropdown ao passar o mouse */
+.user-menu:hover .dropdown {
+    display: block;
+}
+
+

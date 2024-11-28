@@ -1,0 +1,1 @@
+import{p as o,b as r}from"./p-f12c14d5.js";export{s as setNonce}from"./p-f12c14d5.js";(()=>{const s=import.meta.url,r={};return""!==s&&(r.resourcesUrl=new URL(".",s).href),o(r)})().then((o=>r([["p-1cd91d67",[[1,"flix-icon",{name:[1],size:[8],solid:[4],color:[1],src:[1],svgContent:[32]}]]]],o)));

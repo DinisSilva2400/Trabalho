@@ -1,0 +1,2 @@
+window.globalEvents.emit(`cms.ab_test_flags`, {"a_a_cms_test":1});
+window.Aetna = {"a_a_cms_test":1};
