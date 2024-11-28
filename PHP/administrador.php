@@ -1,5 +1,7 @@
 <?php
+session_start();
 require_once '../basedados/basedados.h.php';
+
 
 // Busca todos os utilizadores da base de dados
 $sql = "SELECT id, nome, email, estado, perfil FROM utilizadores";
@@ -8,7 +10,6 @@ $result = $conn->query($sql);
 if (!isset($_SESSION['perfil']) || $_SESSION['perfil'] !== 'administrador') {
     $_SESSION['erro'] = "Acesso negado!";
     header("Location: index.php");
-
     exit();
 }
 
@@ -21,11 +22,10 @@ if (!isset($_SESSION['perfil']) || $_SESSION['perfil'] !== 'administrador') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão de Utilizadores</title>
     <link rel="stylesheet" href="../css/admin.css">
+
 </head>
 <body>
-    <header>
-        
-    </header>
+    
     <h1>Gestão de Utilizadores</h1>
     <table border="1">
         <thead>
@@ -59,6 +59,6 @@ if (!isset($_SESSION['perfil']) || $_SESSION['perfil'] !== 'administrador') {
             </tr>
             <?php endwhile; ?>
         </tbody>
-    </table>
+    </table>    
 </body>
 </html>
